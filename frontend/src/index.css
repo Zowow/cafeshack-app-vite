@@ -7,3 +7,8 @@
     background-size: contain;
     background-blend-mode: lighten;
 } */
+
+
+.hero-info {
+    z-index: -1;
+}

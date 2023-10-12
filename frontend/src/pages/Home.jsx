@@ -1,10 +1,11 @@
 import FoodDetails from '../components/FoodDetails'
+import Hero from '../components/Hero';
 
 function Home() {
 
     return (
-        <div className='my-10'>
-            <FoodDetails />
+        <div>
+            <Hero />
         </div>
     );
 }

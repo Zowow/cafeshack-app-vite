@@ -30,9 +30,10 @@ function FoodDetails() {
     const mapData = data.foods.data.map(item => (
         <div className="box rounded-xl border-2 border-solid border-slate-700 shadow-lg overflow-hidden w-1/2 md:w-full" key={item.attributes.id}>
             <img
+                className='px-8 pt-8'
                 src={`http://localhost:1337${item.attributes.image.data.attributes.url}`}
                 alt={item.attributes.title} />
-            <h2 className="my-4 text-center font-[Poppins]">{item.attributes.title}
+            <h2 className="my-2 text-center font-[Poppins]">{item.attributes.title}
                 <span className="font-[Poppins] font-bold"> - ${item.attributes.price}</span>
             </h2>
         </div>
@@ -40,7 +41,7 @@ function FoodDetails() {
 
     return (
         <div className="flex justify-center">
-            <div className="container justify-items-center grid gap-10 md:grid-cols-3 md:w-3/4 lg:w-1/2">
+            <div className="container justify-items-center grid gap-10 md:grid-cols-3 md:w-3/5 ">
                 {mapData}
             </div>
         </div>
