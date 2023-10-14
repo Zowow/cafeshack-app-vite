@@ -10,8 +10,8 @@ function Header() {
                     <li>
                         <Link 
                         exact to="/"
-                        className='px-6 py-1 cursor-pointer bg-gray-500 text-white border-[2px] border-black rounded-full font-[Poppins]
-                            hover:bg-gray-800
+                        className='px-6 py-1 cursor-pointer bg-complimentary-1 text-white border-[1px] border-black rounded-full font-[Poppins]
+                            hover:bg-gray-800 hover:text-white
                         '
                         href='#'>Home
                         </Link>
@@ -19,8 +19,8 @@ function Header() {
                     <li>
                         <Link 
                         to="/menu"
-                        className='px-6 py-1 cursor-pointer bg-gray-500 text-white border-2 border-black rounded-full font-[Poppins]
-                            hover:bg-gray-800
+                        className='px-6 py-1 cursor-pointer bg-complimentary-1 text-white border-[1px] border-black rounded-full font-[Poppins]
+                            hover:bg-gray-800 hover:text-white
                         '
                         href='#'>Menu
                         </Link>
@@ -28,8 +28,8 @@ function Header() {
                     <li>
                         <Link 
                         to="/about"
-                        className='px-6 py-1 cursor-pointer bg-gray-500 text-white border-2 border-black rounded-full font-[Poppins]
-                            hover:bg-gray-800
+                        className='px-6 py-1 cursor-pointer bg-complimentary-1 text-white border-[1px] border-black rounded-full font-[Poppins]
+                            hover:bg-gray-800 hover:text-white
                         '
                             href='#'>About
                         </Link>

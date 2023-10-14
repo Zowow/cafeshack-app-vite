@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <footer class="site-footer bg-gray-600 py-12 text-gray-300 text-base leading-6">
+        <footer class="site-footer bg-gray-600 py-12 text-gray-300 text-base leading-6 relative z-10">
         <div class="container mx-auto">
             <div class="flex flex-wrap -mx-4">
             <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0">

@@ -7,11 +7,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary': '#F35C47',
-        'secondary': '#FF8C4C',
-        'complimentary-1': '#FFC082',
-        'complimentary-2': '#FFF4DE',
+        'primary': '#A1CCD1',
+        'secondary': '#F4F2DE',
+        'complimentary-1': '#E9B384',
+        'complimentary-2': '#7C9D96',
       },
+      boxShadow: {
+        'custom': '4px 4px 4px 0px rgba(0, 0, 0, 0.25);'
+      }
     },
   },
   plugins: [],
