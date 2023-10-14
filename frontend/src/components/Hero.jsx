@@ -8,8 +8,8 @@ function Hero() {
     return ( 
         <div className="h-1/2 relative">
             <div className="hero-description text-center">
-                 <h1 className="text-5xl font-[Poppins] mb-2">Welcome to Cafe Shack</h1>
-                 <p className="text-xl font-[Poppins]">Your daily dose of caffeine and community.</p>
+                 <h1 className="text-2xl md:text-4xl lg:text-5xl font-[Poppins] mb-2">Welcome to Cafe Shack</h1>
+                 <p className="text-sm md:text-lg lg:text-xl font-[Poppins]">Your daily dose of caffeine and community.</p>
             </div>
 
             <div className="
@@ -17,63 +17,71 @@ function Hero() {
                     lg:grid-cols-3 lg:w-[750px] lg:mx-auto 
                     ">
                     <div className="box
-                            shadow-custom w-[350px] h-56 flex items-center rounded-xl border-[1px] border-black bg-white
-                            lg:w-56 lg:h-56 lg:flex-col lg:justify-center lg:gap-5 
+                            w-[300px] h-48 shadow-custom flex items-center rounded-xl border-[1px] bg-white gap-4 p-4
+                            m:w-[350px] m:h-56 
+                            lg:w-56 lg:h-56 lg:flex-col lg:justify-center lg:gap-5 lg:border-black 
                             ">
                         <div className="
-                            w-[250px] h-[200px] ml-4 bg-secondary rounded-xl flex items-center
+                            bg-secondary rounded-xl flex items-center w-[250px]
                             lg:w-[120px] lg:h-[80px] lg:ml-0 lg:gap-5
                         ">
                             <img 
-                                className="py-4 px-8 bg-secondary rounded-xl mx-auto"
+                                className="
+                                p-5
+                                lg:px-8 lg:py-4 bg-secondary rounded-xl"
                                 src="https://cdn-icons-png.flaticon.com/512/3361/3361122.png" 
                                 alt="" 
                             />
                         </div>
-                        <p className="text-center text-md font-[Poppins] w-3/4">
+                        <p className="text-center text-md font-[Poppins]">
                             This is where the description should be.
                         </p>
                     </div>
                     <div className="box
-                            shadow-custom w-[350px] h-56 flex items-center rounded-xl border-[1px] border-black
-                            lg:w-56 lg:h-56 lg:flex-col lg:justify-center lg:gap-5 
+                            w-[300px] h-48 shadow-custom flex items-center rounded-xl border-[1px] bg-white gap-4 p-4
+                            m:w-[350px] m:h-56 
+                            lg:w-56 lg:h-56 lg:flex-col lg:justify-center lg:gap-5 lg:border-black 
                             ">
                         <div className="
-                            w-[250px] h-[200px] ml-4 bg-secondary rounded-xl flex items-center
+                            bg-secondary rounded-xl flex items-center w-[250px]
                             lg:w-[120px] lg:h-[80px] lg:ml-0 lg:gap-5
                         ">
                             <img 
-                                className="py-4 px-8 bg-secondary rounded-xl mx-auto"
+                                className="
+                                p-5
+                                lg:px-8 lg:py-4 bg-secondary rounded-xl"
                                 src="https://cdn-icons-png.flaticon.com/512/1037/1037855.png" 
                                 alt="" 
                             />
                         </div>
-                        <p className="text-center text-md font-[Poppins] w-3/4">
+                        <p className="text-center text-md font-[Poppins]">
+                            This is where the description should be.
+                        </p>
+                    </div>
+                    <div className="box
+                            w-[300px] h-48 shadow-custom flex items-center rounded-xl border-[1px] bg-white gap-4 p-4
+                            m:w-[350px] m:h-56 
+                            lg:w-56 lg:h-56 lg:flex-col lg:justify-center lg:gap-5 lg:border-black 
+                            ">
+                        <div className="
+                            bg-secondary rounded-xl flex items-center w-[250px]
+                            lg:w-[120px] lg:h-[80px] lg:ml-0 lg:gap-5
+                        ">
+                            <img 
+                                className="
+                                p-5
+                                lg:px-8 lg:py-4 bg-secondary rounded-xl"
+                                src="https://cdn-icons-png.flaticon.com/512/4008/4008984.png" 
+                                alt="" 
+                            />
+                        </div>
+                        <p className="text-center text-md font-[Poppins]">
                             This is where the description should be.
                         </p>
                     </div>
                     
-                    <div className="box
-                            shadow-custom w-[350px] h-56 flex items-center rounded-xl border-[1px] border-black
-                            lg:w-56 lg:h-56 lg:flex-col lg:justify-center lg:gap-5 
-                            ">
-                        <div className="
-                            w-[250px] h-[200px] ml-4 bg-secondary rounded-xl flex items-center
-                            lg:w-[120px] lg:h-[80px] lg:ml-0 lg:gap-5
-                        ">
-                            <img 
-                                className="py-4 px-8 bg-secondary rounded-xl mx-auto"
-                                src="https://cdn-icons-png.flaticon.com/512/4008/4008984.png"  
-                                alt="" 
-                            />
-                        </div>
-                        <p className="text-center text-md font-[Poppins] w-3/4">
-                            This is where the description should be.
-                        </p>
-                    </div>
             </div>
             <div className="
-                bg-[url('./assets/hero-m-bg.svg')] h-full w-full bg-no-repeat absolute top-[20%]
                 lg:bg-[url('./assets/hero-bg.svg')] lg:h-[320px] lg:w-[1038px] lg:mx-auto lg:relative
             
             "></div>
