@@ -1,25 +1,38 @@
 import logo from '../assets/logo.png'
+import {Link} from "react-router-dom"
 
 function Header() {
     return (
         <header className='mb-5'>
-            <img className="w-20 mx-auto mt-12 mb-4" src="https://cdn-icons-png.flaticon.com/512/11465/11465855.png" alt="..."/>
+            <img className="w-32 md:w-40 lg:w-48 mx-auto mt-4 mb-1 " src={logo} alt="..."/>
             <nav>
                 <ul className='flex justify-center items-center h-16 gap-2'>
                     <li>
-                        <a className='px-8 py-2 cursor-pointer bg-primary text-complimentary-2 border-[2px] border-black rounded-full font-[Poppins]'
+                        <Link
+                        exact="true" to="/"
+                        className='px-6 py-1 cursor-pointer bg-complimentary-1 text-white border-[1px] border-black rounded-full font-[Poppins]
+                            hover:bg-gray-800 hover:text-white
+                        '
                         href='#'>Home
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a className='px-8 py-2 cursor-pointer bg-primary text-complimentary-2 border-2 border-black rounded-full font-[Poppins]'
+                        <Link
+                        to="/menu"
+                        className='px-6 py-1 cursor-pointer bg-complimentary-1 text-white border-[1px] border-black rounded-full font-[Poppins]
+                            hover:bg-gray-800 hover:text-white
+                        '
                         href='#'>Menu
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a className='px-8 py-2 cursor-pointer bg-primary text-complimentary-2 border-2 border-black rounded-full font-[Poppins]'
+                        <Link
+                        to="/about"
+                        className='px-6 py-1 cursor-pointer bg-complimentary-1 text-white border-[1px] border-black rounded-full font-[Poppins]
+                            hover:bg-gray-800 hover:text-white
+                        '
                             href='#'>About
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </nav>

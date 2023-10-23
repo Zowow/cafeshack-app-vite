@@ -2,8 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-    background-image:url(./assets/coffeebg.jpg);
-    background-size: contain;
-    background-blend-mode: lighten;
-} */
+.coffee {
+    height: 50px;
+    width: 50px;
+    border: 5px solid white;
+    /* Changed border color to black (#000) */
+    box-shadow: 0 0 0 5px #E9B384;
+    /* Changed shadow color to black (#000) */
+    margin: auto;
+    position: relative;
+    border-radius: 0 0 110px 110px;
+    background-image: linear-gradient(0deg,
+            #E9B384 110px,
+            /* Changed white to black (#000) */
+            transparent 110px,
+            transparent 230px);
+    background-size: 230px 230px;
+    background-position: 0 0;
+    animation: fill 2s infinite;
+}
+
+@keyframes fill {
+    100% {
+        background-position: 0 -115px;
+    }
+}
