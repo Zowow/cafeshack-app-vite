@@ -21,7 +21,7 @@ const BEVERAGES = gql`
     }
 `
 
-function DrinkDetails() {
+function BeverageDetails() {
     const { data, loading, error } = useQuery(BEVERAGES)
 
     {if (loading) return <div className='my-12'><div className='coffee'></div></div>}
@@ -54,4 +54,4 @@ function DrinkDetails() {
      );
 }
 
-export default DrinkDetails;
+export default BeverageDetails;

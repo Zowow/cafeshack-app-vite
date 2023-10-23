@@ -25,8 +25,8 @@ function Footer() {
             <div className="w-full md:w-1/4 px-4">
                 <h6 className="text-white text-xl font-bold mb-2 px-4 lg:px-4">Quick Links</h6>
                 <ul className="footer-links px-4 lg:px-4">
-                    <li><Link exact="true" to="/" className="text-gray-300">Menu</Link></li>
-                    <li><Link to="/menu" className="text-gray-300">Home</Link></li>
+                    <li><Link exact="true" to="/" className="text-gray-300">Home</Link></li>
+                    <li><Link to="/menu" className="text-gray-300">Menu</Link></li>
                     <li><Link to="/about" className="text-gray-300">About</Link></li>
                 </ul>
             </div>
