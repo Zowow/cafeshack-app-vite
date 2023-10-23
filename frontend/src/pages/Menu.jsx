@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import FoodDetails from "../components/FoodDetails";
-import DrinkDetails from "../components/DrinkDetails";
+import BeverageDetails from "../components/BeverageDetails";
 
 function Menu() {
     const [activeCategory, setActiveCategory] = useState("food");
@@ -40,7 +40,7 @@ function Menu() {
                 </div>
             </div>
             {activeCategory === "food" && <FoodDetails />}
-            {activeCategory === "beverages" && <DrinkDetails />}
+            {activeCategory === "beverages" && <BeverageDetails />}
             {activeCategory === "etc" && <FoodDetails />}
         </div>
      );

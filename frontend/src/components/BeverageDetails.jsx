@@ -1,8 +1,8 @@
 import { useQuery, gql } from '@apollo/client'
 
-const DRINKS = gql`
-    query GetDrinks {
-        drinks{
+const BEVERAGES = gql`
+    query GetBeverages {
+        beverages{
             data{
             id,
                 attributes{
@@ -22,12 +22,12 @@ const DRINKS = gql`
 `
 
 function DrinkDetails() {
-    const { data, loading, error } = useQuery(DRINKS)
+    const { data, loading, error } = useQuery(BEVERAGES)
 
     {if (loading) return <div className='my-12'><div className='coffee'></div></div>}
     { if (error) return <p className='text-center'>Error 404: No Data Found</p> }
 
-    const mapData = data.drinks.data.map(item => (
+    const mapData = data.beverages.data.map(item => (
         <div className="box rounded-xl border-2 border-solid border-slate-700 shadow-lg overflow-hidden w-[250px]
                         md:w-[200px]
                         lg:w-[220px]
